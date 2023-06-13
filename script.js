@@ -35,7 +35,13 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	for(let code of encodedStr){
-		decodedArr.push(lookup[code]);
+
+		if(code==' '){
+			decodedArr.push(code);
+		}
+		else{			
+			decodedArr.push(lookup[code]);
+		}
 	}
 
   return decodedArr; //return decodedArr
