@@ -36,7 +36,7 @@ function rot13(encodedStr) {
   // Only change code below this line
 	for(let code of encodedStr){
 
-		if(lookup[code]=== undefine){
+		if(lookup[code]=== undefined){
 			decodedArr.push(code);
 		}
 		else{			
